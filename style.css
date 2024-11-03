@@ -356,6 +356,24 @@ section{
 
   
 }
+@media (max-width: 768px) {
+    .navbar {
+        display: none; 
+        flex-direction: column; 
+        position: absolute;
+        background-color: white; 
+        width: 100%; 
+        z-index: 1000; 
+    }
+
+    .navbar.active {
+        display: flex; 
+    }
+
+    #menu-bar {
+        cursor: pointer;
+    }
+}
 
 @media(max-width:450px){
 
