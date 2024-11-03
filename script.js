@@ -27,3 +27,9 @@ function CountDown(){
 setInterval(function(){
     CountDown();
 },1000)
+
+$(document).ready(function() {
+    $('#menu-bar').on('click', function() {
+        $('.navbar').toggleClass('active'); // Toggle the active class
+    });
+});
